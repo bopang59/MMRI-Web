@@ -1,0 +1,29 @@
+#error404-body{
+    margin:0;
+    height:100vh;
+    color:var(--UMblue);
+}
+#error-img{
+    display:block;
+    align-self:center;
+    padding-top:125px;
+    height:20vw;
+    width:20vw;
+    left:50%;
+    position:relative;
+    transform: translateX(-50%);
+}
+
+#error-message{
+    display:block;
+    text-align:center;
+    width:100%;
+}
+#error-message h1{
+    font-size: 6vw;
+}
+#error-message h2{
+    margin:0;
+    font-size: 2vw;
+    padding-bottom: 20px;
+}

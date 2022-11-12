@@ -1,0 +1,24 @@
+
+#seminar-details{
+    width:100%;
+    padding: 0 12px;
+    color:var(--light-blue);
+}
+
+#seminar-speaker{
+    display: table;
+    font-size: calc(12px + 1vw);
+    width:100%;
+}
+
+#seminar-date{
+    font-size: calc(8px + .8vw);
+    display: table;
+    margin-top: -8;
+}
+
+#seminar-zoom{
+    display:table;
+    margin-top: -2.2;
+    font-size: calc(8px + .8vw);
+}

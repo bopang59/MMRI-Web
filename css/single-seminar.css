@@ -1,0 +1,79 @@
+#seminar-body{
+    margin:0;
+   width:100%;
+}
+
+#seminar-content-container {
+
+    padding:calc(32px + 1.5vw);
+    min-height:30vw;
+    color: var(--UMblue);
+}
+
+#seminar-content-title{
+   
+    padding: 0 2.5%;
+    font-size:calc(22px + 2vw);
+    padding-bottom:10px;
+    width:85%;
+    
+}
+#seminar-content-table .column{
+        float: left;
+        width: 50%;
+        padding-top:20px; 
+    
+}
+
+
+#seminar-speaker-column img{
+    display: block; 
+    margin: 0 auto; 
+    width:20vw; 
+    height: 20vw; 
+    max-height: 500px; 
+    max-width: 500px;
+    padding: 20px; 
+}
+
+
+#speaker-caption{
+    display: block; 
+    margin: 0 auto; 
+    justify-self: center;
+    text-align:center; 
+    width:75%;
+    font-size: calc(1vw + 12px);
+}
+
+#seminar-content-table:after{
+
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+#seminar-media-column iframe{
+    display: block; 
+    margin: 0 auto; 
+    width:95%;  
+    padding: 25px; 
+}
+#seminar-media-column object{
+    display: block; 
+    margin: 0 auto; 
+    padding:25px;
+    max-height: 300px;
+    max-width:500px; 
+}
+
+
+/*Mobile view*/ 
+@media(max-width: 690px){
+    #seminar-content-table .column{
+        float: none;
+      width:100%;
+}
+ 
+}

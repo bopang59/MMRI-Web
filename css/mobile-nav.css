@@ -1,0 +1,128 @@
+
+/* Mobile navigation Menu */ 
+#mobile-nav-menu{
+    display: none;
+    background-color: var(--maize);
+    position: fixed; 
+    transition: 0.4s;
+    top:100px;
+    width: 100%;
+    text-align: center;
+    opacity: 0; 
+    margin:0;
+    pointer-events: none;
+  }
+#mobile-nav-menu ul{
+    list-style: none; 
+    padding: 10px 32px;
+    position: relative;
+}
+#mobile-nav-menu ul li{
+
+    position: relative;
+     width:auto;
+    padding: 24px 0;
+    left:50%;
+    transform: translateX(-50%);
+    max-width:350px;
+}
+#mobile-nav-menu .menu-item{
+    position:relative; 
+
+}
+#mobile-nav-menu a{
+    font-size: 20px; 
+    z-index:3;
+    position:relative;
+    text-align: center;
+    color: var(--UMblue);
+
+}
+
+#mobile-nav-menu #nav-items{
+    position:relative; 
+}
+#mobile-nav-menu .sub-menu{
+    display:none;
+    background-color:var(--light-blue);
+    padding:0;
+    position:relative;
+    height:auto;
+    left:50%;
+    transform: translateX(-50%);
+    transition:.5s;
+    min-width:200px;
+    border:4px solid var(--UMblue);
+    z-index:99;
+    
+}
+
+#mobile-nav-menu li:hover .sub-menu{
+    display:block;
+}
+
+#mobile-nav-menu .sub-menu a{
+    color:white;
+    display:block;
+    box-sizing: border-box;
+    padding:12px 6px;
+    transition:.5s;
+}
+
+
+#mobile-nav-menu .sub-menu a:hover{
+    color:var(--UMblue);
+}
+
+#mobile-nav-menu a:not(:only-child)::after{
+    content: "▼";
+  }
+  
+  #mmri-home-link-logo-mobile{
+    height:100px;
+    transition:.5s;
+    background-color: var(--UMblue);
+    padding: 0 8px;
+    width:100px;
+    border-left: 4px solid var(--maize);
+    position:relative; 
+    left:50%;
+    transform: translateX(-50%);
+}
+  #mmri-home-link-logo-mobile:hover {
+    opacity:.5;
+  }
+  #mmri-home-link-logo-mobile img{
+    height:100%;
+    display:flex;
+ 
+    box-sizing:border-box;
+    padding: 8px;
+    object-fit: contain;
+  }
+  
+  
+
+
+/*Media Queries*/
+
+@media(max-width: 600px){
+  
+    #mobile-nav-menu{
+        top:50px;
+    }
+    }
+ 
+    @media(max-width: 1470px){
+        
+       
+        #menu-icon{
+            display:flex;
+        }
+      
+        #mobile-nav-menu{
+            display: block;
+        }
+    }
+    
+   

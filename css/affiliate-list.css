@@ -1,0 +1,49 @@
+#affiliate-list-body{
+    margin:0;
+    height:auto;
+}
+#affiliate-list{
+    
+    padding:32px 32px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#affiliate-link{
+    text-decoration: none;
+    
+}
+#affiliate-card{
+    margin: 16px 16px; 
+    height:auto;
+    text-align: center;
+    width:250px;
+    color:black;
+}
+
+
+#affiliate-image img{
+    object-fit:cover;
+    width:200px;
+    height:200px;
+    border-radius:5px;
+
+}
+#affiliate-title{
+    font-size: 16px;
+    color:#888888;
+}
+#affiliate-info{
+    font-size: 10px;
+}
+
+
+#affiliate-name{
+    text-decoration:underline;
+    font-size:calc(8px + .5vw);
+    transition:.5s;
+}
+#affiliate-card:hover #affiliate-name{
+    color:var(--light-blue);
+}

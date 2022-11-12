@@ -1,0 +1,69 @@
+html{
+    margin:0;
+}
+#staff-body{
+    margin:0;
+    
+}
+#staff-main{
+    height:auto;
+    
+    padding-top:100px;
+}
+
+#staff-container{
+    width:100%;
+    text-align:center;
+    min-height:30vw;
+}
+#staff-card{
+    display: inline-block;
+    background-color: var(--light-blue);
+    width:240px;
+    height:300px;
+    margin: 64px 48px;
+    border-top:  10px solid var(--UMblue);
+    border-radius:10px;
+    color:white;
+    position:relative;
+}
+#staff-card img{
+    position:relative;
+    transform: translateY(-50%);
+    width:60%;
+    border-radius: 25%;
+    border: 8px solid white;
+    margin:5px;
+    object-fit: cover;
+}
+
+.staff-name,.staff-title,.staff-number,.staff-email,#staff-card p{
+    position:absolute;
+    padding:30px;
+    top:30%;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+}
+.staff-name{
+    top:15%;
+}
+ .staff-title{
+  top:45%;
+}
+.staff-number{
+   
+    top:65%;
+
+}
+.staff-email{
+    top:75%;
+    transition:.5s;
+    text-decoration:underline;
+}
+.staff-email:hover{
+    color:var(--maize);
+    cursor:pointer;
+}
+ 
+ 

@@ -1,0 +1,36 @@
+#single-affiliate-body{
+    margin:0;
+   width:100%;
+}
+
+#affiliate-content-container {
+
+    padding:calc(32px + 1.5vw);
+    min-height:30vw;
+    color: var(--UMblue);
+    
+}
+
+#affiliate-content-title{
+    padding: 0 10%;
+    font-size:calc(22px + 2vw);
+    padding-bottom:10px;
+    width:75%;
+    
+}
+#affiliate-content-date{
+    width:300px;
+    padding-bottom:10px;
+    font-size:2em;
+    border-bottom: 2px solid var(--maize);
+
+}
+#affiliate-content{
+    font-size:calc(16px + .5vw);
+    padding: 0 10%;
+    color:black;
+}
+#affiliate-content img{
+   max-width:400px;
+   max-height:400px;
+}

@@ -1,0 +1,47 @@
+#section-banner{
+    
+    height:auto;
+    padding-top:125px;
+    text-align:center;
+    color:white;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    
+    background-color: var(--light-blue);
+    padding-bottom:10px;
+    
+    
+}
+
+
+#section-banner h1{
+    border-right: 3px solid var(--maize);
+    padding:0;
+    margin:0;
+    font-size:calc(24px + 3.0vw);
+    text-decoration:underline;
+    width:100%;
+}
+
+#section-banner h2{
+    font-size:calc(22px + 2.5vw);
+    margin:0;
+    padding-top:2.5%;
+    width:100%;
+}
+
+
+@media(max-width:600px){
+    #section-banner{
+        padding-top:75px;
+    }
+    #section-banner h1{
+       
+        font-size:calc(16px + 1.0vw);
+        
+    }
+    #section-banner h2{
+        font-size:calc(12px + 1.0vw);
+        
+    }
+}

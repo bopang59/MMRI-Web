@@ -1,0 +1,190 @@
+        /* FOOTER */
+        
+        footer {
+            /* background-image: url(https://materialsresearch.umich.edu/wp-content/themes/seminar-updated-6%3A29/includes/theme_imgs/footer-softer.png); */
+            background: var(--UMblue);
+            /* background-blend-mode: multiply; */
+            /* background-color: rgb(39 46 72 / 56%); */
+            background-blend-mode: multiply;
+            /* background-color: rgb(130 131 131 / 3%); */
+            background-repeat: no-repeat;
+            /* background-image: url(http://mmri.local/wp-content/themes/seminar-updated-06%3A29/includes/theme_imgs/north-corped.png); */
+            /* padding: 30px 0px; */
+            height: 300p;
+            color: white;
+            display: flex;
+            z-index: 99;
+            width: 100%;
+        }
+        
+        #footer-northcamp {
+            background: #00274c75;
+            background-blend-mode: darken;
+            background-repeat: round;
+            padding: 40px 150px;
+            /* height: 300p;*/
+            color: white;
+            display: flex;
+            z-index: 99;
+        }
+        
+        footer a {
+            color: var(--maize);
+            text-decoration: none;
+            transition: .3s;
+        }
+        
+        footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        footer #left-footer {
+            /*margin-left: 160;*/
+            flex: 1;
+            text-align: center;
+            font-size: 20px;
+            /*border-right: 1px solid var(--maize);*/
+            padding-left: 32px;
+        }
+        
+        footer #left-footer h3 {
+            color: var(--maize);
+            /*color: var(--UMblue);*/
+            text-decoration: underline;
+        }
+        
+        footer #left-footer ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.5;
+        }
+        
+        footer #right-footer {
+            /*margin-left: 150;*/
+            /*to be in the middle*/
+            flex: 1;
+            height: fit-content;
+            /* padding: 8px; */
+            text-align: center;
+        }
+        
+        footer #right-footer h3 {
+            /*color: var(--maize);*/
+        }
+        
+        footer #right-footer h5 {
+            line-height: .4;
+            font-size: 12px;
+            /*color: var(--maize);*/
+        }
+        
+        footer #contact-info {
+            margin-right: 140;
+            line-height: 1.5;
+            font-size: 16px;
+            color: var(--maize);
+            /*color: var(--UMblue);*/
+        }
+        
+        footer #social-media-footer a .fa-facebook,
+        footer #social-media-footer a .fa-twitter,
+        footer #social-media-footer a .fa-instagram {
+            color: var(--maize);
+            transition: 0.4s;
+        }
+        
+        footer #social-media-footer ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        footer #social-media-footer ul li {
+            padding: 32px;
+            font-size: 40px;
+        }
+        
+        footer #social-media-footer ul li:hover a .fa-facebook {
+            color: #4267B2;
+        }
+        
+        footer #social-media-footer ul li:hover a .fa-instagram {
+            color: #e1306c;
+        }
+        
+        footer #social-media-footer ul li:hover a .fa-twitter {
+            color: #1DA1F2;
+        }
+        
+        footer #right-footer #dark {
+            border: 1.5px solid whitesmoke;
+            background-color: var(--UMblue);
+            max-width: 50%;
+            text-align: center;
+            width: 80%;
+            min-width: 80px;
+            padding: 4%;
+            border-radius: 3%;
+        }
+        /*background-color*/
+        
+        .background-color-footer {
+            /* background-blend-mode: hue; */
+            display: inline-flex;
+            background-color: rgb(251 251 251 / 8%);
+            /* padding: 10rem; */
+            backdrop-filter: blur(3px);
+            /* --tw-border-opacity: 1; */
+            border-color: rgb(55 65 81/var(--tw-border-opacity));
+            border-radius: 6%;
+            /* width: fit-content; */
+            width: 100%;
+            padding: 15;
+            padding-inline: 19px;
+        }
+        
+        .h3-footer {
+            color: var(--maize);
+            text-decoration: underline;
+            font-size: calc(10px + 1.0vw);
+        }
+        /*Mobile view*/
+        
+        @media(max-width: 690px) {
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            footer #left-footer {
+                flex: 1;
+                border-right: 0;
+                padding-left: 0;
+            }
+            footer #middle-footer {
+                flex: 1;
+                border-right: 0;
+                padding-left: 0;
+            }
+            footer #right-footer {
+                border: 10px solid var(--UMblue);
+                border-radius: 10%;
+                background: var(--maize);
+            }
+            footer #right-footer #dark {
+                /* background-color: var(--UMblue);*/
+            }
+            footer #right-footer h3 {
+                color: var(--UMblue);
+            }
+            footer #right-footer h5 {
+                color: var(--UMblue);
+            }
+            footer #social-media-footer a .fa-facebook,
+            footer #social-media-footer a .fa-twitter,
+            footer #social-media-footer a .fa-instagram {
+                color: var(--UMblue);
+                transition: 0.4s;
+            }
+        }

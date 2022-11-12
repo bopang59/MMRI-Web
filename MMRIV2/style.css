@@ -1,0 +1,31 @@
+/*
+
+    Theme Name: MMRI and Sub Labs Theme 
+    Author: Adam Johanson 
+    Version: 2.0 
+*/
+:root{
+    --UMblue:#00274C;
+    --maize: #FFCB05;
+    --white:#FFFFFF;
+    --surface-color: #fff;
+    --light-blue:#2F65A7;
+    --grey:#989c97;
+    --curve: 40;
+    /*
+    blue rgba: (0,39,76,1);
+    maize rgba: (244,203,5,1);
+    */
+
+}
+#wpadminbar{
+    top:0;
+    position:fixed;
+}
+html{
+    font-family: ‘Merriweather’, Georgia, serif;
+    margin:0;
+}
+
+
+

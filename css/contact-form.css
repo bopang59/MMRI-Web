@@ -1,0 +1,141 @@
+    #contact-banner {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: bottom;
+        box-sizing: border-box;
+        padding: calc(32px + 1.5vw);
+        background-color: rgba(47, 101, 167, .7);
+        /* Tint color */
+        background-blend-mode: multiply;
+    }
+    
+    #contact-banner form {
+        margin: 0;
+    }
+    
+    #contact-title {
+        z-index: 90;
+        color: white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-20%);
+        text-decoration: underline;
+        margin: 0;
+        font-size: calc(8px + 1.0vw);
+    }
+    
+    #contact-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        background-color: var(--light-blue);
+        margin: calc(-32px - 1.5vw)
+    }
+    
+    #two-column {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 500px;
+        background-color: var(--light-blue);
+        padding: calc(48px + 1.5vw) calc(32px + 1.5vw);
+        box-sizing: border-box;
+        color: white;
+    }
+    
+    #two-column #left {
+        width: 49%;
+        float: left;
+    }
+    
+    #two-column #right {
+        float: right;
+        width: 49%;
+    }
+    
+    #two-column p {
+        overflow-wrap: unset;
+        /*so the subj looks normal*/
+        margin-bottom: 12px;
+    }
+    
+    #two-column input[type="text"] {
+        border: none;
+        border: 1px solid var(--UMblue);
+        font-size: 14px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 2px;
+        width: 100%;
+        padding: 5px;
+        height: 40px;
+        background: white;
+    }
+    
+    #two-column #right input[type="email"],
+    #two-column #left input[type="text"] {
+        width: 100%;
+        height: 40px;
+        background: white;
+    }
+    
+    #two-column textarea {
+        position: relative;
+        padding: 5px;
+        border: 1px solid var(--UMblue);
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 2px;
+        width: 100%;
+        height: 200px;
+        background: white;
+    }
+    
+    #two-column input[type="submit"] {
+        padding: 8px 5vw;
+        background: white;
+        color: var(--UMblue);
+        border: 1px solid var(--UMblue);
+        float: right;
+        font-size: 16px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        transition: .5s;
+        border-radius: 5px;
+    }
+    
+    #two-column input[type="text"]:focus,
+    #two-column textarea:focus {
+        background: white;
+        border: 1px solid var(--UMblue);
+    }
+    
+    #two-column input[type="submit"]:hover {
+        background: var(--maize);
+        color: var(--UMblue);
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    select {
+        height: 40px;
+        width: 100%;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        #two-column #left {
+            width: 100%;
+            float: none;
+        }
+        #two-column #right {
+            float: none;
+            width: 100%;
+        }
+    }

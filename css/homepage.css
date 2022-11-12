@@ -1,0 +1,1761 @@
+                                         #homepage-body {
+                                             box-sizing: border-box;
+                                             margin: 0;
+                                             background-color: #00274C;
+                                             height: max-content;
+                                         }
+                                         
+                                         #homepage-main {
+                                             padding-top: 80px;
+                                             /*used to ajust the top padding right below the header*/
+                                         }
+                                         /*this is used to ajust the position of the search box*/
+                                         
+                                         .asl_w_container asl_w_container_1 {
+                                             margin-left: 200;
+                                         }
+                                         /* this is to control the format and position of the search bar*/
+                                         
+                                         .asl_w_container {
+                                             width: 50%;
+                                             margin: 20px 20px 20px 800px;
+                                         }
+                                         /*this is to control the border*/
+                                         
+                                         #ajaxsearchlite1 .probox,
+                                         div.asl_w .probox {
+                                             margin: 0;
+                                             padding: 8px;
+                                             height: 28px;
+                                             background-color: #fff;
+                                             /* border: 2px solid #4a89bf; */
+                                             border: 3px solid var(--maize);
+                                             border-radius: 0 0 0 0;
+                                             box-shadow: 0 0 0 0 #b5b5b5 inset;
+                                         }
+                                         /*added new css style for the colum only, remember also need to remove some from nav css*/
+                                         /* Create two unequal columns that floats next to each other */
+                                         
+                                         .column {
+                                             float: left;
+                                             padding: 10px;
+                                             height: 300px;
+                                             /* Should be removed. Only for demonstration */
+                                         }
+                                         
+                                         .bg-canvas {}
+                                         
+                                         .left {
+                                             width: 15%;
+                                             margin-top: -17;
+                                             /*added this*/
+                                         }
+                                         
+                                         .right {
+                                             /*this controls the white canvas*/
+                                             height: fit-content;
+                                             max-width: 80%;
+                                             /*width: 72.5%;*/
+                                             padding: 10;
+                                             float: right;
+                                         }
+                                         /* Clear floats after the columns */
+                                         
+                                         .row:after {
+                                             /*content: "";*/
+                                             display: table;
+                                             clear: both;
+                                         }
+                                         
+                                         #cores-directory {
+                                             position: absolute;
+                                             height: auto;
+                                             width: 13vw;
+                                             top: 50%;
+                                             transform: translateY(-50%);
+                                             color: white;
+                                         }
+                                         
+                                         #cores-directory-title {
+                                             text-align: center;
+                                             width: 100%;
+                                             margin: 0;
+                                             font-size: calc(1.0vw);
+                                             padding: 0 1vw;
+                                             text-decoration: underline;
+                                         }
+                                         
+                                         #cores-directory-list li {
+                                             padding: 1vw;
+                                             transition: .5s;
+                                             border-radius: 5px;
+                                         }
+                                         
+                                         #cores-directory-list a {
+                                             text-decoration: none;
+                                             color: white;
+                                             font-size: calc(1.4vw);
+                                         }
+                                         
+                                         #cores-directory-list li:hover {
+                                             background-color: var(--UMblue);
+                                             cursor: pointer;
+                                         }
+                                         
+                                         #cores-directory-list li:hover a {
+                                             color: var(--maize);
+                                             text-decoration: underline;
+                                         }
+                                         /* this controls the content in side nav bar*/
+                                         
+                                         .menu-mmri-nav-menu-container {
+                                             padding-bottom: 6px;
+                                             margin-top: 7;
+                                             /* word-break: keep-all; */
+                                             /*margin-left: -8;*/
+                                             font-size: calc(6px + 1.0vw);
+                                             color: var(--UMblue);
+                                             line-height: 2.3;
+                                             background-color: #ecececf7;
+                                             height: fit-content;
+                                             border-radius: 7px;
+                                             position: fixed;
+                                             /*width: 235;*/
+                                             /*width: 15.5%;*/
+                                             min-width: fit-content;
+                                             border: 2px solid white;
+                                             box-shadow: 1px 3px 3px 3px #a2a2a27d;
+                                         }
+                                         /*I added this css to display sidebar properly*/
+                                         
+                                         #menu-mmri-nav-menu {
+                                             display: contents;
+                                             /* display: flex; */
+                                             align-items: center;
+                                             /* justify-content: center; */
+                                             /*height: 430;*/
+                                             /* margin-left: -40; */
+                                             position: fixed;
+                                             list-style: none;
+                                             min-width: fit-content;
+                                         }
+                                         /*this is for wordpress nav bar import*/
+                                         
+                                         .boxes {
+                                             margin-top: 5.5;
+                                             /* margin-top: 1; */
+                                             overflow-wrap: break-word;
+                                             /* word-break: keep-all; */
+                                             /* width: 232; */
+                                             /*height: 45px;*/
+                                             height: fit-content;
+                                             background-color: #61616100;
+                                             transition: all 0.2s;
+                                             display: flex;
+                                             align-items: center;
+                                             font-size: calc(3.5px + 1.0vw);
+                                             /* color: blue; */
+                                             /* margin-left: -40; */
+                                             border-radius: 10;
+                                             padding: 8px;
+                                             min-width: fit-content;
+                                         }
+                                         
+                                         .change-bgcolor:hover {
+                                             background-color: var(--maize);
+                                             transition: all 0.2s;
+                                             color: #f3f3f3d1;
+                                         }
+                                         /*#menu-item-53235 {
+    font-weight: bold;
+    padding-top: 9;
+}*/
+                                         /* for the header section---here I added the css for my account button and become affiliate button */
+                                         
+                                         .ctn-btn {
+                                             column-gap: 10px;
+                                             margin-right: 1.5;
+                                             /*so it align right*/
+                                             /* position: fixed; */
+                                             /* grid-gap: 9px;*/
+                                             /* grid-row-gap: unset; */
+                                             /*display: grid;*/
+                                             display: -webkit-inline-box;
+                                         }
+                                         
+                                         .button-header1 {
+                                             justify-content: center;
+                                             align-items: center;
+                                             display: flex;
+                                             height: 40px;
+                                             border-right: 1.5px solid whitesmoke;
+                                             margin-bottom: -10;
+                                             margin-top: 40;
+                                             /* margin: 0; */
+                                             /*border-radius: 7px;*/
+                                             /*background-color: var(--maize);*/
+                                             /*color: var(--UMblue);*/
+                                             /* padding: 15px 15px; */
+                                             text-decoration: none;
+                                             /* font-size: 8px; */
+                                             font-size: 12px;
+                                             /* margin: 20px 23px; */
+                                             cursor: pointer;
+                                             width: 210;
+                                             padding-left: 43;
+                                             /*this controls the gap between two*/
+                                         }
+                                         
+                                         .button-header2 {
+                                             justify-content: center;
+                                             align-items: center;
+                                             display: flex;
+                                             height: 40px;
+                                             /*border-right: 1.5px solid whitesmoke;*/
+                                             margin-bottom: -10;
+                                             margin-top: 40;
+                                             /* margin: 0; */
+                                             /*border-radius: 7px;*/
+                                             /*background-color: var(--maize);*/
+                                             /*color: var(--UMblue);*/
+                                             /* padding: 15px 15px; */
+                                             text-decoration: none;
+                                             /* font-size: 8px; */
+                                             font-size: 12px;
+                                             /* margin: 20px 23px; */
+                                             cursor: pointer;
+                                             width: 210;
+                                         }
+                                         /*.button-header a:before {
+     /*try*/
+                                         /* content: "";
+     position: absolute;
+     top: 0.438rem;
+     left: 0;
+     width: 20%;
+     height: 50%;
+     -webkit-transform: rotate(-75deg);
+     -ms-transform: rotate(-75deg);
+     transform: rotate(-75deg);
+     background: #fff;
+     opacity: 0.4;
+     -webkit-filter: blur(6px);
+     filter: blur(6px);
+     -webkit-animation: anim 2s infinite;
+     animation: anim 2s infinite;
+ }*/
+                                         /*this is for the chart that I added*/
+                                         
+                                         canvas {
+                                             background-color: #f6f4f400;
+                                             position: absolute;
+                                             top: -2700%;
+                                             right: 0;
+                                             /* border-radius: 150px; */
+                                             /* box-shadow: -5px 5px 6px -2px rgb(0 0 0 / 20%); */
+                                             -webkit-font-smoothing: antialiased;
+                                             -moz-osx-font-smoothing: grayscale;
+                                             height: 460;
+                                         }
+                                         
+                                         .target {
+                                             font-family: Gotham;
+                                             font-weight: 600;
+                                             text-align: center;
+                                             display: flex;
+                                             flex-direction: column;
+                                             margin: 20px 0 50px;
+                                         }
+                                         
+                                         #tierPointsValue {
+                                             line-height: 175px!important;
+                                         }
+                                         
+                                         .target-chart {
+                                             top: 25;
+                                             /* top: 16.5; */
+                                             left: 75%;
+                                             border-radius: 50%;
+                                             width: 110px;
+                                             height: 110px;
+                                             /* border: 3px solid white; */
+                                             margin: 0 auto 2rem;
+                                             /* border-radius: 100%; */
+                                             border-radius: 50%;
+                                             background-size: cover;
+                                             /* background-color: lightgrey; */
+                                             /* box-shadow: inset 0 0 0 35px white; */
+                                             position: absolute;
+                                         }
+                                         
+                                         .target-percentage {
+                                             color: #c29a55;
+                                             font-size: 20px;
+                                         }
+                                         
+                                         #totalPoints {
+                                             margin-top: -2;
+                                         }
+                                         
+                                         .points-random {
+                                             line-height: 1.4;
+                                             position: absolute;
+                                             margin-top: 5px;
+                                             font-size: 10px;
+                                             font-weight: 200;
+                                         }
+                                         
+                                         * {
+                                             -webkit-box-sizing: border-box;
+                                             -moz-box-sizing: border-box;
+                                             box-sizing: border-box;
+                                         }
+                                         
+                                         .donut-chart {
+                                             position: relative;
+                                             width: 200px;
+                                             height: 200px;
+                                             margin: 0 auto 2rem;
+                                             border-radius: 100%
+                                         }
+                                         
+                                         .center {
+                                             margin: auto;
+                                             color: black;
+                                             /* background-color: #f1e14529; */
+                                             position: absolute;
+                                             text-align: center;
+                                             font-size: 23px;
+                                             top: 30;
+                                             left: 0;
+                                             bottom: 0;
+                                             right: 100;
+                                             width: 120px;
+                                             height: 120px;
+                                             margin: auto;
+                                             border-radius: 50%;
+                                             line-height: 35px;
+                                             padding: 15% 0 0;
+                                         }
+                                         
+                                         .portion-block {
+                                             border-radius: 50%;
+                                             clip: rect(0px, 200px, 200px, 100px);
+                                             /*top, right, bottom, left/
+     /*clip: rect(0px, 200px, 200px, 100px);*/
+                                             height: 100%;
+                                             position: absolute;
+                                             width: 100%;
+                                         }
+                                         
+                                         .circle {
+                                             clip: rect(0px, 100px, 200px, 0px);
+                                             border-radius: 50%;
+                                             /*clip: rect(0px, 100px, 200px, 0px);*/
+                                             height: 100%;
+                                             position: absolute;
+                                             width: 100%;
+                                             font-family: monospace;
+                                             font-size: 1.5rem;
+                                         }
+                                         
+                                         #part1 {
+                                             border: 7px solid #f5be34ed;
+                                             transform: rotate(216deg);
+                                         }
+                                         
+                                         #part1 .circle {
+                                             /*background-color: #d4ca02d1;*/
+                                             animation: first 1s 1 forwards;
+                                         }
+                                         
+                                         #part2 {
+                                             border: 7px solid #f07e7e;
+                                             transform: rotate(97deg);
+                                         }
+                                         
+                                         #part2 .circle {
+                                             /*background-color: #7fba239e;*/
+                                             animation: second 1s 1 forwards 1s;
+                                         }
+                                         
+                                         #part3 {
+                                             border: 7px solid #3680fdbf;
+                                             transform: rotate(31deg);
+                                         }
+                                         
+                                         #part3 .circle {
+                                             /*background-color: #54bfcf8c;*/
+                                             animation: third 0.5s 1 forwards 2s;
+                                         }
+                                         
+                                         #part4 {
+                                             border: 7px solid #40a744;
+                                             transform: rotate(250deg);
+                                         }
+                                         
+                                         #part4 .circle {
+                                             /*background-color: #eb8b8bcf;*/
+                                             animation: fourth 0.5s 1 forwards 2s;
+                                         }
+                                         
+                                         #m1 {
+                                             border: 7px solid whitesmoke;
+                                             transform: rotate(0deg);
+                                         }
+                                         
+                                         #m1 .circle {
+                                             /*background-color: #d4ca02d1;*/
+                                             animation: first 1s 1 forwards;
+                                         }
+                                         
+                                         #m2 {
+                                             border: 7px solid whitesmoke;
+                                             transform: rotate(0deg);
+                                         }
+                                         
+                                         #m2 .circle {
+                                             /*background-color: #d4ca02d1;*/
+                                             animation: first 1s 1 forwards;
+                                         }
+                                         
+                                         #m3 {
+                                             border: 7px solid #40a744;
+                                             transform: rotate(25deg);
+                                         }
+                                         
+                                         #m3 .circle {
+                                             /*background-color: #d4ca02d1;*/
+                                             animation: first 1s 1 forwards;
+                                         }
+                                         /* Animation */
+                                         
+                                         .h3-link {
+                                             padding: 2%;
+                                             font-size: calc(7px + .8vw);
+                                         }
+                                         
+                                         @keyframes first {
+                                             from {
+                                                 transform: rotate(0deg);
+                                             }
+                                             to {
+                                                 transform: rotate(100deg);
+                                             }
+                                         }
+                                         
+                                         @keyframes second {
+                                             from {
+                                                 transform: rotate(0deg);
+                                             }
+                                             to {
+                                                 transform: rotate(150deg);
+                                             }
+                                         }
+                                         
+                                         @keyframes third {
+                                             from {
+                                                 transform: rotate(0deg);
+                                             }
+                                             to {
+                                                 transform: rotate(111deg);
+                                             }
+                                         }
+                                         
+                                         @keyframes fourth {
+                                             from {
+                                                 transform: rotate(0deg);
+                                             }
+                                             to {
+                                                 transform: rotate(10deg);
+                                             }
+                                         }
+                                         /*another animation so it rotate*/
+                                         
+                                         #turnme {
+                                             transform-origin: 50%;
+                                             animation: runGear 10s linear infinite;
+                                         }
+                                         
+                                         @keyframes runGear {
+                                             from {
+                                                 transform: rotate(0deg);
+                                             }
+                                             to {
+                                                 transform: rotate(360deg);
+                                             }
+                                         }
+                                         /*this I added the inner and outer border for the donut chart*/
+                                         
+                                         .border-inner {
+                                             animation: 1.5s anim-lineUp ease-out;
+                                             /*background: #dddde98f;*/
+                                             position: absolute;
+                                             text-align: center;
+                                             font-size: 28px;
+                                             top: 0;
+                                             /*left: 0;*/
+                                             bottom: 0;
+                                             right: 100px;
+                                             /*width: 140px;
+     height: 140px;*/
+                                             width: 120px;
+                                             height: 120px;
+                                             margin: auto;
+                                             border-radius: 50%;
+                                             line-height: 35px;
+                                             padding: 15% 0 0;
+                                         }
+                                         
+                                         .border-outer {
+                                             /*margin-top: 1;
+   width: 210px;
+   height: 210px;
+   margin: 0 0 0rem;
+   border-radius: 100%;
+   border-radius: 50%;
+   /* background-size: cover; */
+                                         }
+                                         /*THis is the colleg portion for each donut*/
+                                         /*following is the bar graph css same as footnote*/
+                                         
+                                         @import url(https://fonts.googleapis.com/css?family=Oswald:700);
+                                         @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+                                         @-keyframes grow-85 {
+                                             from {
+                                                 right: 100%;
+                                             }
+                                             to {
+                                                 right: 15%;
+                                             }
+                                         }
+                                         
+                                         @-webkit-keyframes grow-85 {
+                                             from {
+                                                 right: 100%;
+                                             }
+                                             to {
+                                                 right: 15%;
+                                             }
+                                         }
+                                         
+                                         @-keyframes grow-2 {
+                                             from {
+                                                 right: 100%;
+                                             }
+                                             to {
+                                                 right: 98%;
+                                             }
+                                         }
+                                         
+                                         @-webkit-keyframes grow-2 {
+                                             from {
+                                                 right: 100%;
+                                             }
+                                             to {
+                                                 right: 98%;
+                                             }
+                                         }
+                                         
+                                         @-keyframes grow-1 {
+                                             from {
+                                                 right: 100%;
+                                             }
+                                             to {
+                                                 right: 99%;
+                                             }
+                                         }
+                                         
+                                         @-webkit-keyframes grow-1 {
+                                             from {
+                                                 right: 100%;
+                                             }
+                                             to {
+                                                 right: 99%;
+                                             }
+                                         }
+                                         
+                                         @-keyframes grow-15 {
+                                             from {
+                                                 right: 100%;
+                                             }
+                                             to {
+                                                 right: 75%;
+                                             }
+                                         }
+                                         
+                                         @-webkit-keyframes grow-15 {
+                                             from {
+                                                 right: 100%;
+                                             }
+                                             to {
+                                                 right: 85%;
+                                             }
+                                         }
+                                         
+                                         .skills {
+                                             margin-top: -145;
+                                             width: 1200px;
+                                             margin-left: 720px;
+                                         }
+                                         
+                                         body {}
+                                         /* h1 {
+     font-family: 'Oswald', sans-serif;
+     font-size: 2rem;
+     padding: 20px;
+     text-align: center;
+     text-transform: uppercase;
+     color: #5A656B;
+     text-shadow: 2px 1px 0px #FFF, 3px 2px 2px #999;
+ }*/
+                                         
+                                         #apps {
+                                             padding: 10;
+                                             font-size: 10;
+                                             float: left;
+                                             text-align: right;
+                                             width: 19%;
+                                         }
+                                         
+                                         #apps p {
+                                             color: white;
+                                             margin-top: 12.5;
+                                             padding: 4.5px 0;
+                                             position: relative;
+                                             text-align: right;
+                                             z-index: 2;
+                                         }
+                                         
+                                         #scale {
+                                             font-size: smaller;
+                                             padding-bottom: 30px;
+                                             position: absolute;
+                                             left: 0;
+                                             right: 0;
+                                             bottom: -30px;
+                                             color: white;
+                                         }
+                                         
+                                         #scale p {
+                                             position: absolute;
+                                             bottom: 0;
+                                             left: -0.30%;
+                                         }
+                                         
+                                         #scale p.one {
+                                             left: 24%;
+                                         }
+                                         
+                                         #scale p.two {
+                                             left: 49%;
+                                         }
+                                         
+                                         #scale p.three {
+                                             left: 74%;
+                                         }
+                                         
+                                         #scale p.four {
+                                             left: 99%;
+                                         }
+                                         
+                                         .grid {
+                                             height: 45%;
+                                             margin-top: 4;
+                                             border-left: 1px dotted white;
+                                             border-bottom: 1px dotted white;
+                                             float: left;
+                                             padding: 10px 0;
+                                             position: relative;
+                                             width: 20%;
+                                         }
+                                         
+                                         .bar {
+                                             padding-bottom: 20;
+                                             float: left;
+                                             height: 15px;
+                                             margin-bottom: 15px;
+                                             position: relative;
+                                             width: 100%;
+                                             z-index: 1;
+                                         }
+                                         
+                                         .bar .inner {
+                                             /*background-color: #feac40;*/
+                                             position: absolute;
+                                             bottom: 0;
+                                             left: 0;
+                                             top: 0;
+                                         }
+                                         
+                                         .bar.pct-85 .inner {
+                                             -webkit-animation-duration: 2s;
+                                             -webkit-animation-name: grow-85;
+                                             right: 15%;
+                                             background-color: #d4ca02d1;
+                                         }
+                                         
+                                         .bar.pct-2 .inner {
+                                             -webkit-animation-duration: 3s;
+                                             -webkit-animation-name: grow-2;
+                                             right: 98%;
+                                             background-color: #7fba239e;
+                                         }
+                                         
+                                         .bar.pct-15 .inner {
+                                             -webkit-animation-duration: 5s;
+                                             -webkit-animation-name: grow-15;
+                                             right: 85%;
+                                             background-color: #54bfcf8c;
+                                         }
+                                         
+                                         .bar.pct-1 .inner {
+                                             -webkit-animation-duration: 3s;
+                                             -webkit-animation-name: grow-1;
+                                             right: 99%;
+                                             background-color: #eb8b8bcf;
+                                         }
+                                         
+                                         .v-divider {
+                                             /*border-right: 1px dotted white;*/
+                                             position: absolute;
+                                             left: 0;
+                                             right: 25%;
+                                             bottom: 0;
+                                             top: 0;
+                                             z-index: 0;
+                                         }
+                                         
+                                         .v-divider.one {
+                                             right: 75%;
+                                         }
+                                         
+                                         .v-divider.two {
+                                             right: 50%;
+                                         }
+                                         
+                                         .footnote {
+                                             /*top: 5.5%;
+     right: 17%;
+     font-size: smaller;
+     position: absolute;*/
+                                             bottom: 44%;
+                                             left: 77%;
+                                             font-size: smaller;
+                                             position: relative;
+                                         }
+                                         /*this row is for the whole page linking the header*/
+                                         
+                                         .row {
+                                             /*padding-top: 30;*/
+                                             padding-top: 5;
+                                             /*not sure if this fits but now it does not move when going down*/
+                                             /*added here to leave space fo rabout drop left menu display*/
+                                         }
+                                         
+                                         .row-chart {
+                                             /*line-height: 18px;*/
+                                             /*added here to leave space fo rabout drop left menu display*/
+                                         }
+                                         
+                                         .color1 {
+                                             width: 10px;
+                                             height: 10px;
+                                             display: inline-block;
+                                             background-color: #40a744;
+                                             position: absolute;
+                                         }
+                                         
+                                         .color2 {
+                                             width: 10px;
+                                             height: 10px;
+                                             display: inline-block;
+                                             background-color: #f07e7e;
+                                             position: absolute;
+                                         }
+                                         
+                                         .color3 {
+                                             width: 10px;
+                                             height: 10px;
+                                             display: inline-block;
+                                             background-color: #f5cd34ed;
+                                             position: absolute;
+                                         }
+                                         
+                                         .color4 {
+                                             width: 10px;
+                                             height: 10px;
+                                             display: inline-block;
+                                             background-color: #3680fdbf;
+                                             position: absolute;
+                                         }
+                                         
+                                         .representation {
+                                             color: white;
+                                             padding: 2;
+                                             font-size: x-small;
+                                             margin-left: 18;
+                                         }
+                                         /*Page Contents*/
+                                         
+                                         #homepage-banner {
+                                             height: auto;
+                                             width: 100%;
+                                             overflow: unset;
+                                             position: relative;
+                                             background-color: var(--UMblue);
+                                         }
+                                         
+                                         .banner-button {
+                                             position: absolute;
+                                             margin: .5vw;
+                                             border: none;
+                                             color: white;
+                                             background-color: var(--UMblue);
+                                             width: 17.5vw;
+                                             height: 5vw;
+                                             font-size: 1.75vw;
+                                             border-radius: 10px;
+                                             transition: .5s;
+                                         }
+                                         
+                                         .banner-button:hover {
+                                             cursor: pointer;
+                                             color: var(--UMblue);
+                                             background-color: var(--maize);
+                                         }
+                                         
+                                         #left-button {
+                                             left: 0;
+                                         }
+                                         
+                                         #right-button {
+                                             right: 0;
+                                         }
+                                         
+                                         #symposium-button {
+                                             top: 7.25vw;
+                                         }
+                                         
+                                         #homepage-banner #maize {
+                                             color: var(--maize);
+                                         }
+                                         
+                                         #homepage-banner #blue {
+                                             color: var(--light-blue);
+                                         }
+                                         /*here I added another property to oval background image*/
+                                         /*class is . \\\ id is #*/
+                                         
+                                         #homepage-oval {
+                                             background-blend-mode: color;
+                                             background-color: #ffffff99;
+                                             background-position: center;
+                                             height: 13vw;
+                                             /* background-image: url(<?php echo get_template_directory_uri() ?>/includes/theme_imgs/northCampus.jpg); */
+                                             /* background-image: url(http://mmri.local/wp-content/themes/seminar-updated-06%3A29/includes/theme_imgs/Phoenix_Blurry.jpg); */
+                                             /*background-image: url(http://mmri.local/wp-content/themes/seminar-updated-06%3A29/includes/theme_imgs/phoneix.jpg);*/
+                                             /*background-image: url(http://mmri.local/wp-content/themes/seminar-updated-06%3A29/includes/theme_imgs/mmpp-blurry-less.jpg);*/
+                                         }
+                                         /*I added this attribute for the vision box, it should be within the right column and looks like a button*/
+                                         
+                                         .rectangle-box {
+                                             background-color: #cfcfd359;
+                                             border-radius: 10px;
+                                             box-sizing: border-box;
+                                         }
+                                         /*this is line up animation for the vision*/
+                                         /* lineup class and keyframes */
+                                         
+                                         .rectangle-box {
+                                             margin-bottom: 15;
+                                             /*animation: 1.5s anim-lineUp ease-out;*/
+                                         }
+                                         
+                                         @keyframes anim-lineUp {
+                                             0% {
+                                                 opacity: 0;
+                                                 transform: translateY(80%);
+                                             }
+                                             20% {
+                                                 opacity: 0;
+                                             }
+                                             50% {
+                                                 opacity: 1;
+                                                 transform: translateY(0%);
+                                             }
+                                             100% {
+                                                 opacity: 1;
+                                                 transform: translateY(0%);
+                                             }
+                                         }
+                                         /* I added this rectangle-content, so the content can be alianed*/
+                                         
+                                         .rectangle-content {
+                                             margin-bottom: 9;
+                                             margin-top: 9;
+                                             padding-bottom: 1;
+                                             padding-top: 1;
+                                             text-align: center;
+                                             color: var(--UMblue);
+                                         }
+                                         /*same animation*/
+                                         
+                                         .rectangle-content {
+                                             /* animation: 1.5s anim-lineUp ease-out;*/
+                                         }
+                                         
+                                         @keyframes anim-lineUp {
+                                             0% {
+                                                 opacity: 0;
+                                                 transform: translateY(80%);
+                                             }
+                                             20% {
+                                                 opacity: 0;
+                                             }
+                                             50% {
+                                                 opacity: 1;
+                                                 transform: translateY(0%);
+                                             }
+                                             100% {
+                                                 opacity: 1;
+                                                 transform: translateY(0%);
+                                             }
+                                         }
+                                         
+                                         #oval-container {
+                                             width: fit-content;
+                                             /*padding: .5vw;*/
+                                         }
+                                         
+                                         #oval-outer {
+                                             /*
+   top: 2.5;
+   color: white;
+   position: relative;
+   background-color: var(--UMblue);
+   width: 43.3vw;
+   height: 20.5vw;
+   border-radius: 50%;
+   left: 50%;
+   transform: translateX(-50%);
+   overflow: hidden;
+   */
+                                             top: 2.5;
+                                             color: white;
+                                             position: relative;
+                                             /* background-color: var(--UMblue); */
+                                             width: 43.3vw;
+                                             height: 20.5vw;
+                                             border-radius: 50%;
+                                             left: 50%;
+                                             transform: translateX(-50%);
+                                             overflow: hidden;
+                                             border: 4px solid var(--UMblue);
+                                         }
+                                         /*below is the hover effect for the two links in the header section*/
+                                         
+                                         a.hover-header {
+                                             color: white;
+                                         }
+                                         
+                                         a.hover-header:link {
+                                             text-decoration: none;
+                                             color: white;
+                                         }
+                                         
+                                         a.hover-header:visited {
+                                             text-decoration: none;
+                                             color: white;
+                                         }
+                                         
+                                         a.hover-header:hover {
+                                             text-decoration: underline;
+                                             color: white;
+                                         }
+                                         
+                                         a.hover-header:active {
+                                             text-decoration: none;
+                                             color: white;
+                                         }
+                                         /*below is the hover effect for sidebar*/
+                                         
+                                         .main a:visited {
+                                             /*color: var(--UMblue) !important;*/
+                                             /*color: var(--light-blue) !important;*/
+                                         }
+                                         
+                                         .main a:hover {
+                                             color: blue;
+                                         }
+                                         /*below is the hover effect for content in four pillars*/
+                                         
+                                         .initial a:visited {
+                                             color: var(--UMblue) !important;
+                                         }
+                                         
+                                         .initial a:visited {
+                                             color: blue;
+                                         }
+                                         
+                                         .ctner {
+                                             padding-bottom: 5px;
+                                             /*height: initial;
+     /*max-width: 300px;*/
+                                             /*text-align: center;
+     height: 320px;
+     /*min-width: 280px;*/
+                                             /*border-radius: 7px;
+     background-color: #cfcfd359;
+     padding-left: 10;
+     padding-right: 10;
+     /*width: 19vw;*/
+                                             height: initial;
+                                             /* max-width: 300px; */
+                                             text-align: center;
+                                             /* height: 320px; */
+                                             min-width: ;
+                                             border-radius: 7px;
+                                             background-color: #cfcfd359;
+                                             padding-left: 10;
+                                             padding-right: 10;
+                                             /* width: 19vw;
+ }
+ 
+ #left-elt {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     transition: .5s;
+     width: 18vw;
+     text-align: center;
+     border-radius: 50%;
+ }
+ 
+ #left-elt h1 {
+     font-size: 2.25vw;
+     margin: 0;
+     left: 50%;
+ }
+ 
+ #left-elt h2 {
+     font-size: 1.5vw;
+     padding: 1vw 3vw;
+ }
+ 
+ #right-elt {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     transition: .5s;
+     width: 18vw;
+     text-align: center;
+     border-radius: 50%;
+     right: 0;
+ }
+ 
+ #right-elt h1 {
+     font-size: 2.25vw;
+     margin: 0;
+     padding: 0 calc(12px + 2vw);
+ }
+ 
+ #right-elt h2 {
+     font-size: 1.5vw;
+     padding: 1vw 3vw;
+ }
+ 
+ #top-elt {
+     position: absolute;
+     top: 0;
+     transform: translateX(-50%);
+     transition: .5s;
+     width: 50vw;
+     text-align: center;
+     border-radius: 50%;
+     left: 50%;
+ }
+ 
+ #top-elt h1 {
+     font-size: 2.25vw;
+     margin: 0;
+     padding-top: 2.0vw;
+ }
+ 
+ #top-elt h2 {
+     font-size: 1.5vw;
+     padding: 0vw 2.5vw;
+ }
+ 
+ #bottom-elt {
+     position: absolute;
+     bottom: 0;
+     transform: translateX(-50%);
+     transition: .5s;
+     width: 50vw;
+     text-align: center;
+     border-radius: 50%;
+     left: 50%;
+     padding-bottom: 2.0vw;
+ }
+ 
+ #bottom-elt h1 {
+     font-size: 2.25vw;
+     margin: 0;
+ }
+ 
+ #bottom-elt h2 {
+     font-size: 1.5vw;
+     padding: 0vw 5vw;
+ }
+ 
+ .initial {
+     /*pointer-events: none;*/
+                                             /*so now the link would be clickable*/
+                                             /*so it will not hover*/
+                                             /*position: relative;*/
+                                             /*so this when the sidebar flows, it wont cover the front page*/
+                                             opacity: 1;
+                                             transition: .5s;
+                                         }
+                                         
+                                         .initial:hover {
+                                             /*there is a hover????*/
+                                             /*pointer-events: none;
+     opacity: 0;*/
+                                             pointer-events: fill;
+                                             position: relative;
+                                             opacity: 10;
+                                             /* transition: 10s; */
+                                             /* pointer-events: none; */
+                                         }
+                                         
+                                         .hover {
+                                             position: absolute;
+                                             opacity: 0;
+                                             top: 0;
+                                             transition: .5s;
+                                             width: 100%;
+                                             height: 100%;
+                                             border-radius: 10px;
+                                             background-color: var(--maize);
+                                             color: var(--light-blue);
+                                         }
+                                         
+                                         .hover:hover {
+                                             opacity: 1;
+                                         }
+                                         
+                                         .elt:hover .hover {
+                                             opacity: 1;
+                                         }
+                                         
+                                         .hover a {
+                                             text-decoration: underline;
+                                             color: var(--light-blue);
+                                             transition: .5s;
+                                         }
+                                         
+                                         .hover a:hover {
+                                             color: var(--UMblue);
+                                         }
+                                         
+                                         #bottom-elt .hover,
+                                         #top-elt .hover {
+                                             width: 90%;
+                                             left: 50%;
+                                             transform: translateX(-50%);
+                                         }
+                                         
+                                         .hover ul {
+                                             display: flex;
+                                             list-style: none;
+                                             justify-content: space-around;
+                                             padding: 0;
+                                         }
+                                         
+                                         #oval-inner {
+                                             position: relative;
+                                             background-color: var(--UMblue);
+                                             /*width: 21vw;
+     height: 11vw;*/
+                                             width: 31%;
+                                             height: 90%;
+                                             /*border-radius: 50%;*/
+                                             top: 50%;
+                                             left: 50%;
+                                             transform: translateX(-50%) translateY(-50%);
+                                             /*color: var(--UMblue);*/
+                                             border: 4px solid white;
+                                         }
+                                         
+                                         #inner-top {
+                                             position: relative;
+                                             top: 50%;
+                                             left: 50%;
+                                             transform: translate(-50%, -50%);
+                                             height: 100%;
+                                             width: 100%;
+                                             /*border-radius: 50% / 100% 100% 0 0;*/
+                                         }
+                                         
+                                         #inner-top img {
+                                             /*width: -webkit-fill-available;*/
+                                             position: fixed;
+                                             left: 50%;
+                                             top: 50%;
+                                             transform: translateX(-50%) translateY(-50%);
+                                             height: 82%;
+                                             border: 2px solid whitesmoke;
+                                             padding: 10px;
+                                             background-color: #00274C;
+                                         }
+                                         
+                                         .canvas-white {
+                                             height: max-content;
+                                             /*this value is the height of .right-250*/
+                                             background-color: #f3f3f3d1;
+                                             /* margin-top: 10;*/
+                                             /*update*/
+                                             padding-top: 5;
+                                             padding-left: 5;
+                                             padding-right: 5;
+                                             padding-bottom: 5;
+                                         }
+                                         
+                                         #vision-container {
+                                             width: 90%;
+                                             position: relative;
+                                             left: 50%;
+                                             transform: translateX(-50%);
+                                         }
+                                         
+                                         #vision-container h1 {
+                                             padding: 0px .5vw;
+                                             font-size: 1.8vw;
+                                             margin: 0;
+                                         }
+                                         
+                                         #vision-container h2 {
+                                             padding: 0 2.4vw;
+                                             shape-outside: circle(50%);
+                                             font-size: 1.025vw;
+                                         }
+                                         /*here I added the css for the four pilliar conatiner, this is right after the vision*/
+                                         
+                                         .four-pillars {
+                                             /*margin-top: -5;
+                align-content: center;
+                display: grid;
+               
+                grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));*/
+                                             /*grid-template-rows: repeat(auto-fit, 350px);*/
+                                             /* margin-top: -5;
+                /* align-content: center; */
+                                             /*display: grid;
+                grid-gap: 1vw;
+                /*grid-gap: 192.2px;*/
+                                             /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+                                             /*grid-template-rows: repeat(auto-fit, 150px);*/
+                                             /*grid-column-gap: 3%;
+                grid-row-gap: 2%;
+                /* width: 100%; */
+                                             /*margin-top: 1%;
+                grid-gap: px;
+                grid-template-columns: 200px 200px;
+                padding-top: 1;
+                /* width: 1000; */
+                                             /* display: grid;
+                float: none;
+                /* grid-template-columns: repeat(auto-fit,minmax(200px,10fr)); */
+                                             /*grid-template-columns: repeat(auto-fit, minmax(50px, 5fr));*/
+                                             grid-column-gap: 3%;
+                                             grid-row-gap: 2%;
+                                             /* width: 100%; */
+                                             margin-top: 1%;
+                                             grid-gap: px;
+                                             grid-template-columns: 200px 200px 200px 200px;
+                                             /* padding-top: 1; */
+                                             /* width: 1000; */
+                                             display: grid;
+                                             float: none;
+                                             grid-template-columns: repeat(auto-fit, minmax(200px, 10fr));
+                                             /* grid-template-columns: repeat(auto-fit, minmax(50px, 5fr*/
+                                         }
+                                         /*here I added the css for the 4 buttons of each pillar for the button tag*/
+                                         
+                                         .button {
+                                             font-size: x-small;
+                                             height: 50;
+                                             width: -webkit-fill-available;
+                                             border-radius: 7px;
+                                             background-color: #ffcb05;
+                                             border: 1px solid whitesmoke;
+                                             margin: 10px;
+                                             align-items: center;
+                                             /* display: flex; */
+                                             justify-content: center;
+                                             box-shadow: 0px 1px 3px 1px #9593847d;
+                                         }
+                                         
+                                         .entry-container @media(max-width: 600px) {
+                                             #homepage-main {
+                                                 padding-top: 50px;
+                                             }
+                                             #oval-container {
+                                                 padding: .5vw;
+                                                 padding-top: 45px;
+                                             }
+                                             #oval-outer {
+                                                 width: 100%;
+                                                 height: 75vw;
+                                             }
+                                             #oval-inner {
+                                                 position: relative;
+                                                 background-color: white;
+                                                 width: 40.6666667vw;
+                                                 height: 28vw;
+                                                 border-radius: 50%;
+                                                 top: 50%;
+                                                 left: 50%;
+                                                 transform: translateX(-50%) translateY(-50%);
+                                                 color: var(--light-blue);
+                                             }
+                                             #inner-top {
+                                                 position: absolute;
+                                                 top: 50%;
+                                                 left: 50%;
+                                                 transform: translate(-50%, -50%);
+                                                 height: 85%;
+                                                 width: 85%;
+                                             }
+                                             #inner-top img {
+                                                 height: 100%;
+                                             }
+                                             /*
+              #inner-bottom {
+                  border: none;
+              }
+              I can just delete this and only leave the vision coantainer!
+              */
+                                             /*here I added this css file for the vision container*/
+                                             /* RECTANGLE */
+                                             .rectangle-box {
+                                                 /*test*/
+                                                 margin-bottom: 10;
+                                                 /* margin-top: 11; */
+                                                 padding-bottom: 1;
+                                                 /*margin-top: 11;*/
+                                                 padding-top: 1;
+                                                 position: relative;
+                                                 width: 40%;
+                                                 overflow: hidden;
+                                                 background-color: #cfcfd359;
+                                             }
+                                             .rectangle-content {
+                                                 /* position: relative;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  color: white;
+                  width: 100%;
+                  height: 100%;
+                  display: table-cell;
+                  text-align: center;
+                  vertical-align: middle;*/
+                                                 height: 135;
+                                                 margin-bottom: 14;
+                                                 margin-top: 9;
+                                                 padding-bottom: 1;
+                                                 padding-top: 1;
+                                                 text-align: center;
+                                                 color: var(--UMblue);
+                                             }
+                                             /* I modified the default h1*/
+                                             .heading-1 {
+                                                 margin-bottom: -6;
+                                                 margin-top: -6;
+                                                 display: block;
+                                                 font-size: 2em;
+                                                 font-weight: bold;
+                                             }
+                                             .heading-4 {
+                                                 padding: 8;
+                                                 line-height: 1.3;
+                                                 font-size: 22;
+                                                 display: block;
+                                                 font-weight: bold;
+                                                 margin-top: 13;
+                                                 margin-bottom: 3;
+                                                 font-weight: 500;
+                                             }
+                                             #vision-container {
+                                                 display: none;
+                                             }
+                                             .banner-button {
+                                                 width: 22.5vw;
+                                                 height: 7.5vw;
+                                                 font-size: 2.5vw;
+                                                 transition: .5s;
+                                             }
+                                             #symposium-button {
+                                                 top: 8vw;
+                                             }
+                                             #left-elt {
+                                                 position: absolute;
+                                                 top: 50%;
+                                                 transform: translateY(-50%);
+                                                 transition: .5s;
+                                                 width: 18vw;
+                                                 text-align: center;
+                                                 border-radius: 50%;
+                                             }
+                                             #right-elt,
+                                             #left-elt {
+                                                 width: 27vw;
+                                             }
+                                             #right-elt h1,
+                                             #left-elt h1 {
+                                                 font-size: 2.75vw;
+                                                 margin: 0;
+                                             }
+                                             #right-elt h2,
+                                             #left-elt h2 {
+                                                 font-size: 2.5vw;
+                                                 padding: 0vw 2vw;
+                                             }
+                                             #top-elt {
+                                                 top: 0%;
+                                                 padding-top: 15px;
+                                                 width: 55vw;
+                                             }
+                                             #top-elt h1,
+                                             #bottom-elt h1 {
+                                                 font-size: 2.75vw;
+                                                 margin: 0;
+                                                 padding-top: 1vw;
+                                             }
+                                             #top-elt h2,
+                                             #bottom-elt h2 {
+                                                 font-size: 2.5vw;
+                                                 padding: .5vw .5vw;
+                                             }
+                                             #bottom-elt {
+                                                 width: 60vw;
+                                                 bottom: 0%;
+                                                 padding-bottom: 25px;
+                                             }
+                                             #bottom-elt .hover {
+                                                 width: 110%;
+                                             }
+                                         }
+                                         /*here I removed the The News Card css to the homepage.css */
+                                         
+                                         .news-card {
+                                             width: 80vw;
+                                             min-width: 300px;
+                                             max-height: 500px;
+                                             background-color: rgb(254 254 254 / 0%);
+                                             box-sizing: border-box;
+                                             padding: 4px;
+                                             margin: 15px;
+                                             position: relative;
+                                             transition: .5s;
+                                         }
+                                         
+                                         .news-card .header {
+                                             width: 100%;
+                                             padding: calc(4px + .5vw);
+                                         }
+                                         
+                                         .news-card .header h1 {
+                                             font-size: calc(16px + 1.0vw);
+                                             margin: 0;
+                                             color: var(--UMblue);
+                                             transition: .5s;
+                                         }
+                                         
+                                         .news-card .header h1:hover {
+                                             color: var(--light-blue);
+                                             text-decoration: underline;
+                                             cursor: pointer;
+                                         }
+                                         
+                                         .news-card .header h4 {
+                                             color: var(--light-blue);
+                                             font-size: calc(8px + .8vw);
+                                             margin: 0;
+                                         }
+                                         
+                                         .news-card .header a {
+                                             text-decoration: none;
+                                         }
+                                         
+                                         .news-card .content {
+                                             color: var(--UMblue);
+                                             width: 100%;
+                                             padding: calc(8px + .75vw);
+                                             box-sizing: border-box;
+                                         }
+                                         
+                                         .news-card .content p {
+                                             font-size: calc(8px + 1.0vw);
+                                             margin: 0;
+                                         }
+                                         /*below is the nav bar, which is the side bar in this case.I moved that from nav bar css to the current homepage.css*/
+                                         /*here i added the icon for the sidebar*/
+                                         
+                                         .fa fa-user-circle-o {
+                                             color: var(--UMblue);
+                                         }
+                                         /*NAVIGATION*/
+                                         
+                                         #regular-nav {
+                                             height: 85px;
+                                             background: var(--UMblue);
+                                             width: 100%;
+                                             margin: 0;
+                                             position: fixed;
+                                             font-size: 20px;
+                                             display: flex;
+                                             justify-content: space-between;
+                                             padding: 0 16px 0 0;
+                                             box-sizing: border-box;
+                                             z-index: 100;
+                                         }
+                                         
+                                         #regular-nav #mmri-logo-container {
+                                             width: 40%;
+                                             min-width: 550px;
+                                             object-fit: cover;
+                                             position: relative;
+                                             background-color: var(--UMblue);
+                                             transition: .5s;
+                                         }
+                                         
+                                         #regular-nav #mmri-logo-container a {
+                                             position: absolute;
+                                             width: 100%;
+                                             height: 100%;
+                                         }
+                                         
+                                         #regular-nav #mmri-logo-container img {
+                                             width: 95%;
+                                             height: 50%;
+                                             position: absolute;
+                                             top: 50%;
+                                             padding-left: 10px;
+                                             transform: translateY(-50%);
+                                         }
+                                         
+                                         #regular-nav #mmri-logo-container:hover {
+                                             cursor: pointer;
+                                             opacity: .7;
+                                         }
+                                         
+                                         .main a {
+                                             min-height: fit-content;
+                                             padding: 0 0px;
+                                             color: #00274C;
+                                             transition: 0.4s;
+                                             text-decoration: none;
+                                         }
+                                         
+                                         a:hover {
+                                             text-decoration: none;
+                                             color: white;
+                                         }
+                                         
+                                         #regular-nav ul {
+                                             display: flex;
+                                             list-style: none;
+                                             justify-content: space-around;
+                                             align-items: center;
+                                             height: 100%;
+                                             margin: 0;
+                                         }
+                                         
+                                         .sub-menu {
+                                             width: max-content;
+                                             list-style: none;
+                                             left: 100%;
+                                             display: none;
+                                             float: left;
+                                             background-color: var(--maize);
+                                             padding: 0;
+                                             position: absolute;
+                                             height: auto;
+                                             transition: .5s;
+                                             min-width: 200px;
+                                             max-height: fit-content;
+                                         }
+                                         
+                                         li:hover .sub-menu {
+                                             /*to test*/
+                                             display: block;
+                                         }
+                                         
+                                         .sub-menu a {
+                                             color: var(--UMblue);
+                                             float: left;
+                                             display: block;
+                                             /*box-sizing: border-box;*/
+                                             padding: 12px 6px;
+                                         }
+                                         
+                                         .sub-menu a {
+                                             width: 100%;
+                                         }
+                                         
+                                         .sub-menu a:hover {
+                                             color: white;
+                                             background-color: var(--UMblue);
+                                         }
+                                         /* SEARCH BOX STYLING */
+                                         
+                                         #regular-nav #searchform {
+                                             position: fixed;
+                                             right: 0;
+                                             top: 24px;
+                                             width: 500px;
+                                             pointer-events: none;
+                                             z-index: 99;
+                                             transition: 0.4s;
+                                         }
+                                         /* Inputs */
+                                         
+                                         #regular-nav #searchform input,
+                                         textarea {
+                                             height: 32px;
+                                             padding: 0 16px;
+                                             font-size: 20px;
+                                             border: none;
+                                             color: var(--UMblue);
+                                             box-shadow: inset 8px 3px 18px -4px rgba(0, 0, 0, 0.4);
+                                         }
+                                         
+                                         #regular-nav #searchform input:focus,
+                                         textarea:focus {
+                                             outline: none;
+                                         }
+                                         
+                                         #regular-nav #searchform input {
+                                             height: 48px;
+                                             width: 100%;
+                                         }
+                                         /*logo styling*/
+                                         
+                                         #logo-img {
+                                             display: flex;
+                                             height: 45%;
+                                             background: var(--UMblue);
+                                             width: 30%;
+                                             margin-right: 100px;
+                                             transition: .4s;
+                                         }
+                                         
+                                         #logo-img img {
+                                             height: 80%;
+                                             padding: 25px 32px;
+                                             color: var(--maize);
+                                             transition: 0.4s;
+                                         }
+                                         
+                                         #logo-img img:HOVER {
+                                             opacity: .8;
+                                             cursor: pointer;
+                                         }
+                                         
+                                         #menu-icon {
+                                             height: 100%;
+                                             font-size: 28px;
+                                             color: white;
+                                             display: none;
+                                             align-items: center;
+                                         }
+                                         
+                                         #menu-icon:hover {
+                                             color: var(--maize);
+                                         }
+                                         
+                                         #search-icon {
+                                             color: white;
+                                             padding: 0 32px;
+                                             cursor: pointer;
+                                             transition: 0.4s;
+                                         }
+                                         
+                                         #search-icon:hover {
+                                             color: var(--maize)
+                                         }
+                                         /*Media Queries*/
+                                         
+                                         @media(max-width: 600px) {
+                                             #regular-nav {
+                                                 /*height: 50px;*/
+                                             }
+                                             #regular-nav #mmri-logo-container {
+                                                 width: 30%;
+                                                 min-width: 300px;
+                                             }
+                                         }
+                                         
+                                         @media (max-width:360px) {
+                                             #regular-nav #mmri-logo-container {
+                                                 width: 30%;
+                                                 min-width: 200px;
+                                             }
+                                             #regular-nav #mmri-logo-container img {
+                                                 width: 100%;
+                                                 height: 40%;
+                                             }
+                                         }
+                                         
+                                         @media(max-width: 1420px) {
+                                             #regular-nav ul {
+                                                 display: none;
+                                             }
+                                             #searchbox {
+                                                 display: none;
+                                             }
+                                         }
+                                         /* this is the end of the side bar*/
+                                         
+                                         @media (max-width: 600px) {
+                                             #recentNews {
+                                                 padding: 0px 0px;
+                                             }
+                                             #Communications-Grid {
+                                                 width: 100%;
+                                                 /*I deleted this*/
+                                                 float: left;
+                                                 grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                                             }
+                                             .news-card {
+                                                 width: 80vw;
+                                                 margin: 4px;
+                                                 padding: 0px;
+                                                 min-width: 200px;
+                                             }
+                                             .news-card .header h1 {
+                                                 font-size: calc(10px + 1.0vw);
+                                             }
+                                             @media (max-width: 400px) {
+                                                 .news-card .header {
+                                                     max-width: 250px;
+                                                 }
+                                                 #Communications-Grid {
+                                                     display: grid;
+                                                     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                                                 }
+                                             }
+                                         }
+                                         
+                                         @media (min-width: 2500px) {
+                                             #banner-container {
+                                                 height: 70vh;
+                                                 background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url("./img/phoneix.jpg");
+                                                 background-position: 0% 65%;
+                                             }
+                                         }

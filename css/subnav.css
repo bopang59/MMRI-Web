@@ -1,0 +1,140 @@
+        /*NAVIGATION*/
+        
+        #sub-nav {
+            height: 100px;
+            background: var(--light-blue);
+            border-bottom: 4px solid var(--maize);
+            width: 100%;
+            margin: 0;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            z-index: 100;
+        }
+        
+        .logo-img {
+            max-height: 100px;
+            padding: 8px 8px;
+            box-sizing: border-box;
+            background-color: var(--UMblue);
+            border-bottom: 4px solid var(--maize);
+            border-right: 4px solid var(--maize);
+            transition: .5s;
+        }
+        
+        .logo-img:hover {
+            opacity: .7;
+        }
+        
+        #mc2-logo-img {
+            padding: 32px 8px;
+        }
+        
+        #sub-nav .menu-container {
+            width: 100%;
+        }
+        
+        #sub-nav #nav-items {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #sub-nav #nav-items a {
+            transition: 0.4s;
+            text-decoration: none;
+            color: white;
+            padding: 0 calc(16px + 1vw);
+            font-size: calc(12px + .5vw);
+        }
+        
+        #sub-nav #nav-items a:hover {
+            color: var(--maize);
+        }
+        
+        #sub-nav #nav-items a:not(:only-child)::after {
+            content: "▼";
+        }
+        
+        #sub-nav .sub-menu {
+            margin-top: auto;
+            left: auto;
+            display: none;
+            float: left;
+            border: 4px solid var(--maize);
+            padding: 0;
+            position: absolute;
+            height: auto;
+            transition: .5s;
+            min-width: 200px;
+            list-style: none;
+            background-color: var(--light-blue);
+        }
+        
+        #sub-nav #nav-items li:hover .sub-menu {
+            display: block;
+        }
+        
+        #sub-nav .sub-menu a {
+            float: left;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            margin: 20px 0px;
+        }
+        
+        #mmri-home-link-logo {
+            height: 100%;
+            transition: .5s;
+            float: right;
+            background-color: var(--UMblue);
+            padding: 0 8px;
+            border-left: 4px solid var(--maize);
+        }
+        
+        #mmri-home-link-logo:hover {
+            height: 100%;
+            opacity: .5;
+        }
+        
+        #mmri-home-link-logo img {
+            height: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            object-fit: contain;
+        }
+        /*Media Queries*/
+        
+        @media(max-width: 600px) {
+            #sub-nav {
+                height: 50px;
+            }
+            .logo-img {
+                padding: 8px 4px;
+                height: 50px;
+            }
+            #mc2-logo-img {
+                padding: 12px 4px;
+            }
+        }
+        
+        @media(max-width: 1470px) {
+            #sub-nav #nav-items {
+                /* display:none;*/
+                /*need to rearrang*/
+            }
+            #mmri-home-link-logo {
+                /* display: none;*/
+            }
+            #menu-icon {
+                display: flex;
+                padding-right: 10px;
+            }
+        }

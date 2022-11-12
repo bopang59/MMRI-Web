@@ -1,0 +1,138 @@
+
+/* Table of Contents */
+
+#slideout-bar{
+    width:250px;
+    transition: .5s;
+    height:100%;
+    position:fixed;
+    background-color: var(--maize);
+    z-index:99;
+    opacity:1;
+    right:-250px;
+}
+
+#slideout-bar.active{
+    right:0px;
+}
+
+
+#slideout-button{
+    position:fixed;
+    top:55%;
+    transform:translateY(-50%);
+    right:0px;
+    z-index: 100;
+    color:var(--UMblue);
+    font-size: 4.5em;
+    background-color:var(--maize);
+    width:50px; 
+    padding:20px 4px;
+    border-radius:2px;
+    transition:.5s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#slideout-button.active{
+    right:250px;
+}
+#slideout-button h1{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform:rotate(180deg);
+    font-size:.3em;
+    transition:.4s;
+    text-decoration: underline;
+}
+
+
+#slideout-button i{
+
+    padding-left:25%;
+    transition:.7s;
+}
+
+#slideout-button.active i{
+    transform: rotate(180deg);
+
+    padding-left:0;
+    
+    padding-right:25%;
+}
+
+#slideout-button:hover{
+    cursor:pointer;
+    color:white;
+}
+#slideout-button:hover h1{
+    
+    color:white;
+}
+
+#slideout-bar a{
+    color: var(--UMblue);
+    text-decoration: none;
+    transition:.5s;
+}
+#slideout-bar a:hover{
+    color: white;
+    text-decoration: none;
+}
+#slideout-logo img{
+    position:absolute;
+    width: 50%; 
+    top:100px;
+    background-color: var(--UMblue);
+    right:0;
+    margin:0px 0px 100px 100px;
+}
+#toc{
+    position:absolute;
+    top:225px;
+    width:100%;
+    color:var(--UMblue);
+    text-align: center;
+    
+}
+#toc ul{
+    position:relative;
+    list-style: none;
+    right:50%;
+    transform:translateX(50%);
+    padding:0px;
+    
+}
+
+#toc li{
+    padding-top:20px;
+    font-size:24px;
+}
+#toc h1{
+    text-decoration: underline;
+    font-size:28px;
+}
+#ql{
+     position:absolute;
+    bottom:0;
+    width:100%;
+    color:var(--UMblue);
+    
+}
+#ql ul{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    position:relative;
+    list-style: none;
+    padding:0px;
+    text-align:center;
+}
+
+#ql li{
+    padding-top:20px;
+    font-size:18px;
+}
+#ql h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size:20px;
+}

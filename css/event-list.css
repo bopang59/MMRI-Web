@@ -1,0 +1,29 @@
+#event-list-body{
+    margin:0;
+    height:auto;
+}
+#event-list{
+    
+    padding:32px 32px;
+}
+#event-link{
+    text-decoration: none;
+    
+}
+
+
+
+#event-title{
+    font-size: 16px;
+    color:#888888;
+}
+#event-info{
+    font-size: 10px;
+}
+
+#seminar-list-title{
+    padding: 0 5%;
+    font-size:calc(12px + .5vw);
+    padding-bottom:10px;
+    width:75%;
+}

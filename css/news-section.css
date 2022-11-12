@@ -1,0 +1,214 @@
+/*style for actual news page*/
+
+
+/*here I added two pilliar class so that can display the news and announcement*/
+
+#news-body {
+    margin: 0;
+}
+
+#Communications-Grid {
+    /* grid-auto-rows: 20px; */
+    /* grid-gap: 5px; */
+    grid-column-gap: 3%;
+    grid-row-gap: 2%;
+    /* width: 100%; */
+    margin-top: 1%;
+    grid-gap: px;
+    grid-template-columns: 200px 200px;
+    padding-top: 1;
+    /* width: 1000; */
+    display: grid;
+    float: none;
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,10fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+/*Recent News*/
+
+
+/* iremoved from homepage to here*/
+
+.news-button {
+    width: -webkit-fill-available;
+    /* margin-top: -10; */
+    font-size: 0.9em;
+    /* padding: 10; */
+    /* font-size: 2em; */
+    /* font-weight: bold; */
+    border: 3.5px solid whitesmoke;
+    /* margin: 10px; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: var(--maize);
+    /* border: none; */
+    color: var(--UMblue);
+    /* padding: 15px 15px; */
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    /* font-size: 8px; */
+    /* font-size: 12px; */
+    /* margin: 20px 23px; */
+    height: 60;
+    min-width: 30vw;
+    margin-left: 70;
+    /* font-size: x-small; */
+    /* height: 50; */
+    /* width: -webkit-fill-available; */
+    /* border-radius: 7px; */
+    /* background-color: #ffcb05; */
+    border: 1px solid whitesmoke;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* align-items: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    box-shadow: 0px 1px 3px 1px #9593847d;
+}
+
+#recentNews {
+    min-width: 200px;
+    overflow: inherit;
+    /* padding: 16px 64px; */
+    background-color: #cfcfd359;
+    border-radius: 7px;
+    /* width: 574; */
+    /* float: right; */
+    /* padding: 30px 30px; */
+    height: auto;
+}
+
+#recentNews .news-title {
+    text-align: center;
+    padding: 16px 0px;
+    font-size: calc(16px + 2.0vw);
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    color: var(--UMblue);
+    margin-top: 10;
+    margin-bottom: 0;
+}
+
+#recentNews .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.btn-news {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 30px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-news.btn-contests a {
+    color: var(--light-blue) !important;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.btn-news.btn-contests a:hover {
+    color: var(--UMblue) !important;
+}
+
+
+/*The News Card */
+
+.news-card {
+    border-radius: 5%;
+    width: 80vw;
+    min-width: 300px;
+    max-height: 500px;
+    background-color: rgb(206 205 205 / 20%);
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 15px;
+    position: relative;
+    transition: .5s;
+}
+
+.news-card .header {
+    text-align: left;
+    width: 100%;
+    padding: calc(4px + .5vw);
+}
+
+.news-card .header h1 {
+    /*font-size: calc(16px + 1.0vw); this is the original*/
+    font-size: calc(9px + 1.0vw);
+    margin: 0;
+    color: var(--UMblue);
+    transition: .5s;
+}
+
+.news-card .header h1:hover {
+    color: var(--light-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.news-card .header h4 {
+    /*this controls the size of the pulishing date*/
+    color: var(--light-blue);
+    font-size: calc(7px + .8vw);
+    margin-top: 12px;
+}
+
+.news-card .header a {
+    text-decoration: none;
+}
+
+.news-card .content {
+    text-align: left;
+    color: var(--UMblue);
+    width: 100%;
+    padding: calc(8px + .75vw);
+    box-sizing: border-box;
+}
+
+.news-card .content p {
+    /*font-size: calc(8px + 1.0vw);this is the original*/
+    font-size: calc(6px + 1.0vw);
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    #recentNews {
+        padding: 0px 0px;
+    }
+    #Communications-Grid {
+        width: 100%;
+        /*I deleted this*/
+        float: left;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    .news-card {
+        width: 80vw;
+        margin: 4px;
+        padding: 0px;
+        min-width: 200px;
+    }
+    .news-card .header h1 {
+        font-size: calc(10px + 1.0vw);
+    }
+    @media (max-width: 400px) {
+        .news-card .header {
+            max-width: 250px;
+        }
+        #Communications-Grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    }
+}

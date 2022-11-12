@@ -1,0 +1,47 @@
+#equipment-list-body{
+    margin:0;
+   width:100%;
+}
+
+#equipment-list-content{
+    padding:calc(32px + 1.5vw);
+    
+    min-height:30vw;
+    color: var(--UMblue);
+}
+#equipment-page-title{
+    padding: 0 10%;
+    font-size:calc(22px + 2vw);
+    padding-bottom:10px;
+    width:75%;
+}
+#equipment-category-list{
+    list-style:none;
+    padding: 0 10%;
+}
+
+#equipment-category-title{
+    font-size: calc(16px + 1.5vw);
+}
+#equipment-item-list{
+    list-style: square;
+    padding: 0 5%;
+}
+#equipment-item-list a{ 
+    color: var(--light-blue);
+    text-decoration:none; 
+    font-size:calc(16px + .5vw);
+    
+    transition:.5s;
+}
+#equipment-item-list a:hover{ 
+    color: var(--UMblue);
+}
+
+
+
+
+
+#content{
+    
+}
